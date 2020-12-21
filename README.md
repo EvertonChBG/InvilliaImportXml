@@ -1,6 +1,6 @@
 # Desafio Invillia
 
-Resultado do Teste para desenvolvedor Senior na Invilia.
+Resultado do Teste para desenvolvedor Sênior na Invilia.
 
 ## Desafio
 - Criar um aplicativo para carregar manualmente os XMLs fornecidos (people.xml e shiporders.xml) e
