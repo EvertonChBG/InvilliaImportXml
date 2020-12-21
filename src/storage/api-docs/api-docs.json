@@ -1,0 +1,176 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "XmlImport Files Api Documentation",
+        "description": "L5 Swagger OpenApi",
+        "contact": {
+            "email": "evertonch.bg@gmail.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:8100/api/",
+            "description": "API Server"
+        }
+    ],
+    "paths": {
+        "/imports": {
+            "get": {
+                "tags": [
+                    "Imports"
+                ],
+                "summary": "Get list of Files Importeds",
+                "description": "Returns list of files importeds",
+                "operationId": "getImportList",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    }
+                }
+            }
+        },
+        "/imports/{id}": {
+            "get": {
+                "tags": [
+                    "Imports"
+                ],
+                "summary": "Get Import information",
+                "description": "Returns Import data",
+                "operationId": "getImportById",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Import id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "404": {
+                        "description": "not found"
+                    }
+                }
+            }
+        },
+        "/peoples": {
+            "get": {
+                "tags": [
+                    "Peoples"
+                ],
+                "summary": "Get list Peoples",
+                "description": "Returns list peoples",
+                "operationId": "getPeoplesList",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    }
+                }
+            }
+        },
+        "/peoples/{id}": {
+            "get": {
+                "tags": [
+                    "Peoples"
+                ],
+                "summary": "Get Import information",
+                "description": "Returns People data",
+                "operationId": "getPeopleById",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "People id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "404": {
+                        "description": "not found"
+                    }
+                }
+            }
+        },
+        "/shiporders": {
+            "get": {
+                "tags": [
+                    "Shiporders"
+                ],
+                "summary": "Get list Shiporders",
+                "description": "Returns list Shiporders",
+                "operationId": "getShipordersList",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    }
+                }
+            }
+        },
+        "/shiporders/{id}": {
+            "get": {
+                "tags": [
+                    "Shiporders"
+                ],
+                "summary": "Get Shiporder information",
+                "description": "Returns Shiporder data",
+                "operationId": "getShipordersById",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Shiporder id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "404": {
+                        "description": "not found"
+                    }
+                }
+            }
+        }
+    },
+    "security": [
+        []
+    ]
+}
